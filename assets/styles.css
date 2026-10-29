@@ -499,3 +499,8 @@ progress::-moz-progress-bar { background: var(--navy); }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Booking: give the form more room */
+.split-top { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 48px; }
+.chip-grid { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); }
+@media (max-width: 1000px) { .split-top { grid-template-columns: 1fr; } }
